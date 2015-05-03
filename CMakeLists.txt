@@ -11,5 +11,6 @@ set(
     src/tmp.cpp
 )
 
-##target_link_libraries()
 add_library(${CMAKE_PROJECT_NAME}_GameEngine STATIC ${GameEngineSrcs})
+target_link_libraries(${CMAKE_PROJECT_NAME}_GameEngine core_static)
+add_dependencies(${CMAKE_PROJECT_NAME}_GameEngine core_static)
