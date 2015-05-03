@@ -1,0 +1,1 @@
+int uselessfunc(int);
